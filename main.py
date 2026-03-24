@@ -6,6 +6,10 @@ from pages_request_city_data import *
 
 from sub_book_database import *
 
+from sub_book_extract import *
+
+
+
 # file_name = "Domino's Pizza Restaurants in Mumbai _ Nearby Pizza Shops in Mumbai – Domino’s India.html"
 base_url = "https://books.toscrape.com/"
 
@@ -33,8 +37,13 @@ def main():
     ## sub book start code .
     
     # fetch product data.
-    product_data_list = fetch_product_table_data()
-    print(product_data_list)
+    sub_book_data_list = fetch_sub_book_table_data()
+
+    # # create table for product.    
+    create_table_sub_book()
+
+    # create html file and extract pages data.
+    create_sub_book_html_files(sub_book_data_list)
 
 
 

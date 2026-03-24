@@ -4,7 +4,7 @@ import requests
 
 from lxml import html
 
-from store_data_database import product_data_insert
+# from store_data_database import product_data_insert
 
 from store_data_database import *
 

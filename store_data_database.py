@@ -114,6 +114,7 @@ def books_url_insert(list_data : list):
 
 
 
+
 def fetch_table_data():
     connection = get_connection()
     cursor = connection.cursor()
